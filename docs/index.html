@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgentKit Hooks Pack — Pre-launch List</title>
+  <meta name="description" content="Production-ready Claude Code Hook templates. Apache 2.0. Launching late May 2026. Get the launch email and the Companion Guide PDF." />
+  <link rel="canonical" href="https://hooks-pack.agentkit.dev/" />
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+      background: #fafafa;
+      color: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0a0a0a; color: #f0f0f0; }
+      .card { background: #181818; border-color: #2a2a2a; }
+      input { background: #0a0a0a; color: #f0f0f0; border-color: #2a2a2a; }
+      a { color: #79b8ff; }
+      .muted { color: #999; }
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+      margin: 0 0 16px;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 16px; }
+    .lede { font-size: 1.05rem; }
+    .muted { color: #555; font-size: 0.9rem; }
+    a { color: #0070f3; text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { text-decoration: none; }
+    ul.bare { list-style: none; padding: 0; margin: 0 0 16px; }
+    ul.bare li { padding: 4px 0; }
+    code {
+      background: rgba(127,127,127,0.18);
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.92em;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    label { display: block; font-size: 0.9rem; margin-bottom: 6px; font-weight: 500; }
+    input[type=email] {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 1rem;
+      border: 1px solid #d0d0d0;
+      border-radius: 6px;
+      background: #fff;
+      color: #1a1a1a;
+    }
+    button {
+      margin-top: 12px;
+      padding: 10px 16px;
+      font-size: 1rem;
+      font-weight: 600;
+      background: #0070f3;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .status { margin-top: 12px; min-height: 1.5em; font-size: 0.95rem; }
+    .status.ok { color: #16a34a; }
+    .status.err { color: #dc2626; }
+    footer { margin-top: 48px; font-size: 0.85rem; color: #888; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AgentKit Hooks Pack</h1>
+  <p class="lede">
+    Production-ready Claude Code Hook templates for teams. Apache 2.0. Launching late May 2026.
+  </p>
+
+  <p>What ships:</p>
+  <ul class="bare">
+    <li>· <code>PreToolUse</code> permission gating &mdash; the four-state state machine</li>
+    <li>· <code>PostToolUse</code> audit log with PII redaction</li>
+    <li>· Kill switch sentinel &mdash; file-based emergency stop</li>
+    <li>· Notification routing &mdash; macOS / Slack / webhook fan-out</li>
+    <li>· Permission rewrite pattern &mdash; safer translation of dangerous commands</li>
+    <li>· Stop-hook cleanup &mdash; session-end <code>/tmp</code> lockfile cleanup</li>
+  </ul>
+
+  <p>
+    Plus a sixty-page Companion Guide PDF on lifecycle events, failure modes,
+    rollout patterns, and compliance audit log design.
+  </p>
+
+  <div class="card">
+    <form id="signup" novalidate>
+      <label for="email">Get the launch email + Companion Guide</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="you@yourdomain.com"
+      />
+      <button type="submit" id="submit">Notify me on launch</button>
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+    </form>
+    <p class="muted" style="margin-top: 16px;">
+      One email when the Pack ships, then roughly two short emails a month with
+      Claude Code Hook patterns and failure modes we run into in production. No
+      drip, no spam. Unsubscribe is one click.
+    </p>
+  </div>
+
+  <p>
+    Reading material in the meantime:
+  </p>
+  <ul class="bare">
+    <li>· 2026-05-02 &mdash; <a href="https://dev.to/agentkit/pretooluse-hooks-are-a-tiny-state-machine-the-four-exit-codes-that-actually-matter-2bg3">PreToolUse Hooks Are a Tiny State Machine: The Four Exit Codes That Actually Matter</a></li>
+    <li>· 2026-05-07 &mdash; <em>PostToolUse Hooks for Audit Logs: A Production Pattern with Code</em> (next)</li>
+  </ul>
+
+  <p class="muted">
+    Code repo (Apache 2.0): <a href="https://github.com/imta71770-dot/agentkit-hooks-pack">github.com/imta71770-dot/agentkit-hooks-pack</a>
+  </p>
+
+  <footer>
+    Built by <a href="https://agentkit.gumroad.com">AgentKit</a> &mdash; production system audits for AI engineering teams.
+  </footer>
+</main>
+
+<script>
+(function () {
+  var KIT_API_KEY = "BVOW2jyA237ku2ne9QKCVA";
+  var TAG_ID = 19290722;
+
+  var form = document.getElementById("signup");
+  var emailInput = document.getElementById("email");
+  var submit = document.getElementById("submit");
+  var status = document.getElementById("status");
+
+  function setStatus(msg, kind) {
+    status.textContent = msg;
+    status.className = "status " + (kind || "");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = (emailInput.value || "").trim();
+    if (!email || email.indexOf("@") === -1) {
+      setStatus("Please enter a valid email address.", "err");
+      emailInput.focus();
+      return;
+    }
+    submit.disabled = true;
+    setStatus("Adding you to the list...");
+
+    fetch("https://api.convertkit.com/v3/tags/" + TAG_ID + "/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ api_key: KIT_API_KEY, email: email })
+    })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        var state = (data.subscription || {}).state;
+        if (state === "active" || state === "inactive") {
+          setStatus(
+            "On the list. Confirmation email is on the way; click the link to lock your spot.",
+            "ok"
+          );
+          emailInput.value = "";
+        } else {
+          setStatus("Subscribed, but the confirmation flow is unclear. Watch your inbox.", "ok");
+        }
+      })
+      .catch(function (err) {
+        setStatus(
+          "Could not subscribe right now. Try again in a minute, or open an issue at the GitHub repo.",
+          "err"
+        );
+      })
+      .then(function () {
+        submit.disabled = false;
+      });
+  });
+})();
+</script>
+</body>
+</html>
