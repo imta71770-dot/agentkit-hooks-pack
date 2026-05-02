@@ -23,8 +23,8 @@ Apache 2.0. All templates are free to use, modify, and ship in your team's setup
 
 ## What we are publishing in the meantime
 
-- 2026-05-02: ["PreToolUse Hooks Are a Tiny State Machine: The Four Exit Codes That Actually Matter"](https://dev.to/agentkit) — first article in the series.
-- 2026-05-07: "PostToolUse Hooks for Audit Logs: A Production Pattern with Code".
+- 2026-05-02 — [PreToolUse Hooks Are a Tiny State Machine: The Four Exit Codes That Actually Matter](https://dev.to/agentkit/pretooluse-hooks-are-a-tiny-state-machine-the-four-exit-codes-that-actually-matter-2bg3) (live, dev.to)
+- 2026-05-07 — *PostToolUse Hooks for Audit Logs: A Production Pattern with Code* (next)
 
 Watch this repo or follow [@imta71770](https://x.com/imta71770) on X for the launch.
 
